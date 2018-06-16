@@ -1,0 +1,40 @@
+Step 1:
+*Install JDK and Setup Path in system environment variables,
+*Install AndroidStdio ,
+*Install Android Emulator ,
+*Android SDK and Setup Path in system environment variables,
+
+Step 2:
+(install React Native)
+*npm install -g react-native-cli
+(Creat newProject)
+*react-native init FitnFab
+(Go to the Project path)
+cd FitnFab
+
+Step 3:
+(install package)
+*npm install
+(install dependency)
+*AS per your Requirment
+*npm install --dav
+(Clean android gradlew)
+*cd android
+*gradlew clean
+
+Step 4:
+(Run reactnative project in android)
+open Command Prompt and type:
+react-native run-android
+
+
+		
+
+		
+
+
+
+
+
+
+

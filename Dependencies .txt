@@ -1,0 +1,17 @@
+#react-native-splash-screen
+npm i react-native-splash-screen --save
+react-native link react-native-splash-screen
+
+#react-native-swiper
+npm i react-native-swiper --save
+
+#react-native-vector-icons
+npm install react-native-vector-icons --save
+react-native link
+
+#react-native-video
+npm install --save react-native-video
+react-native link
+
+#react-navigation
+npm install --save react-navigation

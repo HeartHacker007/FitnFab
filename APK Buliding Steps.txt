@@ -1,0 +1,29 @@
+I hope your Project is Ready now so before buliding apk file you need to follow some nassasry steps.
+
+Step:1 Put it down below code on this path: android/gradlew.properties
+
+MYAPP_RELEASE_STORE_FILE=fitFab.keystore
+MYAPP_RELEASE_KEY_ALIAS=fitFab
+MYAPP_RELEASE_STORE_PASSWORD=jay@007
+MYAPP_RELEASE_KEY_PASSWORD=jay@007
+
+Step:2 Put it down below code on this path:android/app/build.gradle
+
+ signingConfigs {
+        release {
+            if (project.hasProperty('MYAPP_RELEASE_STORE_FILE')) {
+                storeFile file(MYAPP_RELEASE_STORE_FILE)
+                storePassword MYAPP_RELEASE_STORE_PASSWORD
+                keyAlias MYAPP_RELEASE_KEY_ALIAS
+                keyPassword MYAPP_RELEASE_KEY_PASSWORD
+            }
+        }
+    }
+Step:3 Finally you are ready to Build your APK so go to the android 
+	cd android 
+
+Step: 4 Now run below command:
+	gradlew assembleRelease
+
+Step:5 Release Apk store in below folder
+	android\app\build\outputs\apk
